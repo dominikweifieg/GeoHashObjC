@@ -16,6 +16,8 @@
 		B467978A178C124300267009 /* libGeoHashObjC.a in Frameworks */ = {isa = PBXBuildFile; fileRef = B4679771178C124300267009 /* libGeoHashObjC.a */; };
 		B4679790178C124300267009 /* InfoPlist.strings in Resources */ = {isa = PBXBuildFile; fileRef = B467978E178C124300267009 /* InfoPlist.strings */; };
 		B4679793178C124300267009 /* GeoHashObjCTests.m in Sources */ = {isa = PBXBuildFile; fileRef = B4679792178C124300267009 /* GeoHashObjCTests.m */; };
+		B467979D178C12B400267009 /* CoreLocation.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = B467979C178C12B400267009 /* CoreLocation.framework */; };
+		B4A4CCCF178D44EF00AEF9EA /* CoreLocation.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = B467979C178C12B400267009 /* CoreLocation.framework */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -54,6 +56,7 @@
 		B467978F178C124300267009 /* en */ = {isa = PBXFileReference; lastKnownFileType = text.plist.strings; name = en; path = en.lproj/InfoPlist.strings; sourceTree = "<group>"; };
 		B4679791178C124300267009 /* GeoHashObjCTests.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = GeoHashObjCTests.h; sourceTree = "<group>"; };
 		B4679792178C124300267009 /* GeoHashObjCTests.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = GeoHashObjCTests.m; sourceTree = "<group>"; };
+		B467979C178C12B400267009 /* CoreLocation.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = CoreLocation.framework; path = System/Library/Frameworks/CoreLocation.framework; sourceTree = SDKROOT; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -61,6 +64,7 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				B467979D178C12B400267009 /* CoreLocation.framework in Frameworks */,
 				B4679775178C124300267009 /* Foundation.framework in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
@@ -69,6 +73,7 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				B4A4CCCF178D44EF00AEF9EA /* CoreLocation.framework in Frameworks */,
 				B4679784178C124300267009 /* SenTestingKit.framework in Frameworks */,
 				B4679786178C124300267009 /* UIKit.framework in Frameworks */,
 				B4679787178C124300267009 /* Foundation.framework in Frameworks */,
@@ -101,6 +106,7 @@
 		B4679773178C124300267009 /* Frameworks */ = {
 			isa = PBXGroup;
 			children = (
+				B467979C178C12B400267009 /* CoreLocation.framework */,
 				B4679774178C124300267009 /* Foundation.framework */,
 				B4679783178C124300267009 /* SenTestingKit.framework */,
 				B4679785178C124300267009 /* UIKit.framework */,
@@ -403,6 +409,7 @@
 				B4679798178C124300267009 /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
 		};
 		B4679799178C124300267009 /* Build configuration list for PBXNativeTarget "GeoHashObjCTests" */ = {
 			isa = XCConfigurationList;
@@ -411,6 +418,7 @@
 				B467979B178C124300267009 /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
 		};
 /* End XCConfigurationList section */
 	};
