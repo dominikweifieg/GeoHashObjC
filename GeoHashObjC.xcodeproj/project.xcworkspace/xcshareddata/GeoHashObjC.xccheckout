@@ -1,0 +1,41 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE plist PUBLIC "-//Apple//DTD PLIST 1.0//EN" "http://www.apple.com/DTDs/PropertyList-1.0.dtd">
+<plist version="1.0">
+<dict>
+	<key>IDESourceControlProjectFavoriteDictionaryKey</key>
+	<false/>
+	<key>IDESourceControlProjectIdentifier</key>
+	<string>F867B4F8-AA99-4529-B63D-964171509F21</string>
+	<key>IDESourceControlProjectName</key>
+	<string>GeoHashObjC</string>
+	<key>IDESourceControlProjectOriginsDictionary</key>
+	<dict>
+		<key>E545B114-783A-4F50-8995-2F9DCCB7BCD4</key>
+		<string>https://github.com/dominikweifieg/GeoHashObjC.git</string>
+	</dict>
+	<key>IDESourceControlProjectPath</key>
+	<string>GeoHashObjC.xcodeproj/project.xcworkspace</string>
+	<key>IDESourceControlProjectRelativeInstallPathDictionary</key>
+	<dict>
+		<key>E545B114-783A-4F50-8995-2F9DCCB7BCD4</key>
+		<string>../..</string>
+	</dict>
+	<key>IDESourceControlProjectURL</key>
+	<string>https://github.com/dominikweifieg/GeoHashObjC.git</string>
+	<key>IDESourceControlProjectVersion</key>
+	<integer>110</integer>
+	<key>IDESourceControlProjectWCCIdentifier</key>
+	<string>E545B114-783A-4F50-8995-2F9DCCB7BCD4</string>
+	<key>IDESourceControlProjectWCConfigurations</key>
+	<array>
+		<dict>
+			<key>IDESourceControlRepositoryExtensionIdentifierKey</key>
+			<string>public.vcs.git</string>
+			<key>IDESourceControlWCCIdentifierKey</key>
+			<string>E545B114-783A-4F50-8995-2F9DCCB7BCD4</string>
+			<key>IDESourceControlWCCName</key>
+			<string>GeoHashObjC</string>
+		</dict>
+	</array>
+</dict>
+</plist>

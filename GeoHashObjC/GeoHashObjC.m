@@ -196,6 +196,11 @@ NSDictionary *_borders;
 
 - (NSArray *) adjacentGeohashes:(NSString *)geohash includeSelf:(BOOL)include
 {
+    if (geohash.length <= 1) {
+        @throw [NSException exceptionWithName:@"AdjacentGeohashComputeException"
+                                       reason:[NSString stringWithFormat:@"Geohash %@ is too short, need at least 2 characters", geohash]
+                                     userInfo:@{@"geohash":geohash, @"includeSelf":[NSNumber numberWithBool:include]}];
+    }
     NSMutableArray *result = [[NSMutableArray alloc] initWithCapacity:9];
     if (include) {
         [result addObject:geohash];

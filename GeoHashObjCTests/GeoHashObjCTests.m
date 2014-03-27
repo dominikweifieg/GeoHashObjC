@@ -87,4 +87,31 @@
     STAssertEqualObjects(result, expected, @"Wrong adjacent");
 }
 
+- (void) testAdjacentGeohashes2
+{
+    NSArray *result = [self.geoHasher adjacentGeohashes:@"u0" includeSelf:NO];
+    NSArray *expected = @[@"ez",@"gb",@"gc",@"sp",@"sr",@"u1",@"u2",@"u3"];
+    STAssertEqualObjects(result, expected, @"Wrong adjacent");
+}
+
+- (void) testAdjacentGeohashes2Include
+{
+    NSArray *result = [self.geoHasher adjacentGeohashes:@"u0" includeSelf:YES];
+    NSArray *expected = @[@"ez",@"gb",@"gc",@"sp",@"sr",@"u0",@"u1",@"u2",@"u3"];
+    STAssertEqualObjects(result, expected, @"Wrong adjacent");
+}
+
+- (void) testAdjacentGeohashes1
+{
+    STAssertThrowsSpecificNamed([self.geoHasher adjacentGeohashes:@"u" includeSelf:NO], NSException, @"AdjacentGeohashComputeException",
+                                @"GeoCodes with less than 2 characters should throw an exception");
+    
+}
+
+- (void) testAdjacentGeohashes1Include
+{
+    STAssertThrowsSpecificNamed([self.geoHasher adjacentGeohashes:@"u" includeSelf:YES], NSException, @"AdjacentGeohashComputeException",
+                                                                                                              @"GeoCodes with less than 2 characters should throw an exception");
+}
+
 @end
