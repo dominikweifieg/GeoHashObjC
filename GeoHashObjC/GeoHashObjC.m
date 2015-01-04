@@ -107,7 +107,7 @@ NSDictionary *_borders;
     double lat = rect.ne.latitude + (rect.sw.latitude - rect.ne.latitude);
     double lng = rect.ne.longitude + (rect.sw.longitude - rect.ne.longitude);
     CLLocationDistance dist = [[[CLLocation alloc] initWithLatitude:lat longitude:lng] distanceFromLocation:[[CLLocation alloc] initWithLatitude:rect.ne.latitude longitude:rect.ne.longitude]];
-    CLRegion *result = [[CLRegion alloc] initCircularRegionWithCenter:CLLocationCoordinate2DMake(lat, lng) radius:dist/2 identifier:geohash];
+    CLRegion *result = [[CLCircularRegion alloc] initWithCenter:CLLocationCoordinate2DMake(lat, lng) radius:dist/2 identifier:geohash];
     return result;
 }
 
