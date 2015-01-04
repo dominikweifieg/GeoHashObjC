@@ -1,6 +1,6 @@
 Pod::Spec.new do |s|
   s.name         = "GeoHashObjC"
-  s.version      = "0.0.1"
+  s.version      = "0.0.2"
   s.summary      = "GeoHash implementation in Objective-C for iOS"
   s.homepage     = "https://github.com/dominikweifieg/GeoHashObjC"
   s.license = { :type => 'MIT', :text => <<-LICENSE
