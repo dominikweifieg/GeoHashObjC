@@ -80,7 +80,7 @@ NSDictionary *_borders;
     NSUInteger length = [geohash length];
     for (int i=0; i<length; i++) {
         NSString *c = [geohash substringWithRange:NSMakeRange(i, 1)];
-        int cd = [_gh_base_32 rangeOfString:c].location;
+        int cd = (int)[_gh_base_32 rangeOfString:c].location;
         for (int j=0; j<5; j++) {
             int mask = GH_BITS[j];
             if (even) {
