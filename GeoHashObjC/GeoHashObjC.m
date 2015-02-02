@@ -80,7 +80,7 @@ NSDictionary *_borders;
     NSUInteger length = [geohash length];
     for (int i=0; i<length; i++) {
         NSString *c = [geohash substringWithRange:NSMakeRange(i, 1)];
-        int cd = [_gh_base_32 rangeOfString:c].location;
+        int cd = (int)[_gh_base_32 rangeOfString:c].location;
         for (int j=0; j<5; j++) {
             int mask = GH_BITS[j];
             if (even) {
@@ -107,7 +107,7 @@ NSDictionary *_borders;
     double lat = rect.ne.latitude + (rect.sw.latitude - rect.ne.latitude);
     double lng = rect.ne.longitude + (rect.sw.longitude - rect.ne.longitude);
     CLLocationDistance dist = [[[CLLocation alloc] initWithLatitude:lat longitude:lng] distanceFromLocation:[[CLLocation alloc] initWithLatitude:rect.ne.latitude longitude:rect.ne.longitude]];
-    CLRegion *result = [[CLRegion alloc] initCircularRegionWithCenter:CLLocationCoordinate2DMake(lat, lng) radius:dist/2 identifier:geohash];
+    CLRegion *result = [[CLCircularRegion alloc] initWithCenter:CLLocationCoordinate2DMake(lat, lng) radius:dist/2 identifier:geohash];
     return result;
 }
 
